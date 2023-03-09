@@ -9,7 +9,6 @@ class OrdersController < ApplicationController
     order  = create_order(charge)
 
     if order.valid?
-      empty_cart!
       redirect_to order, notice: 'Your Order has been placed.'
     else
       redirect_to cart_path, flash: { error: order.errors.full_messages.first }
@@ -20,11 +19,6 @@ class OrdersController < ApplicationController
   end
 
   private
-
-  def empty_cart!
-    # empty hash means no products in cart :)
-    update_cart({})
-  end
 
   def perform_stripe_charge
     Stripe::Charge.create(
