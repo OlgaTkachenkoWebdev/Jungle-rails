@@ -1,0 +1,15 @@
+.dashboard {
+  padding: 30px;
+  height: auto;
+  width:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.total_products {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
