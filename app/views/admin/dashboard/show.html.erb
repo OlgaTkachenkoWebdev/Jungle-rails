@@ -1,10 +1,15 @@
 <header class="page-header">
-<h1>Dashboard</h1>
+<h1>Dashboard 🪴</h1>
 </header>
-<main class="container dashboard alert alert-success" role="alert">
+<main class="container">
+<div class="dashboard alert alert-success" role="alert">
+<article class="info">
 <div class="total_products">
-<p>Total products: <%= @total_products %> </p> 
-<%= link_to 'Products', [:admin, :products], class: "nav-link" %>
+<h4>Total products: <%= @total_products %> </h4> 
+<h4><a href="/admin/products" class="alert-link">Products</a></h4>
 </div>
-<p>Categories: <%= @num_categories %> </p>
+<h4>Categories: <%= @num_categories %> </h4>
+</article>
+<img src="https://amecorg.com/wp-content/uploads/2020/09/SMALL-evil.jpg" width="300">
+<div>
 </main>
