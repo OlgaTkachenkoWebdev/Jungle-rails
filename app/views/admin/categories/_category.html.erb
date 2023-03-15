@@ -1,0 +1,10 @@
+<tr>
+  <td>
+    <%= category.name %>
+  </td>
+  <td>
+    <% for product in category.products do%>
+    <p><%= product.name %></p>
+    <% end %>
+  </td>
+</tr>
