@@ -1,0 +1,29 @@
+<section class="login-show">
+
+  <header class="page-header">
+  <h1>Login</h1>
+  </header>
+
+  <article class="login-form">
+  <div class="row">
+  <div class="col-sm-6 col-sm-offset-1">
+  <%= form_tag '/login' do %>
+  Email:
+  <div class="form-group">
+  <%= text_field_tag :email %>
+  </div>
+  Password: 
+  <div class="form-group">
+  <%= password_field_tag :password %>
+  </div>
+
+
+  <div class="well">
+  <%= submit_tag "Submit", class: 'btn btn-primary' %>
+  </div>
+  </div>
+  </div>
+  </article>
+
+<% end %>
+</section>

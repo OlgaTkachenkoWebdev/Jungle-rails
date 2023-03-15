@@ -19,6 +19,8 @@ http_basic_authenticate_with name: ENV['BASIC_AUTH_USERNAME'], password: ENV['BA
     end
   end
 
+  private
+
   def category_params
     params.require(:category).permit(
       :name
