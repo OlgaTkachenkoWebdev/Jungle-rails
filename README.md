@@ -2,6 +2,12 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+## Technical Specifications
+Make sure that your version of Rails is 6.1.5. In order to install the correct version of Rails, run gem install rails -v 6.1.5.
+* Ruby on Rails
+* Webpack, Babel
+* Cypress-rails, Rspec-rails
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
@@ -29,3 +35,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+
+## Screenshots
+
+![]()
+![]()
+![]()
