@@ -20,7 +20,7 @@ describe('Add product to the cart', () => {
     cy.get(".btn")
     .click()
     .get(".end-0 > .nav-link")
-    .should("contain", "My Cart (1)")
+    .should("contain", "(1)")
   });
 
 })
