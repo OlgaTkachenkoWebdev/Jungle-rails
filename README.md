@@ -38,6 +38,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-![]()
-![]()
-![]()
+![Home page](https://github.com/OlgaTkachenkoWebdev/Jungle-rails/blob/master/docs/home_page.jpg?raw=true)
+![New product](https://github.com/OlgaTkachenkoWebdev/Jungle-rails/blob/master/docs/new_product.jpg?raw=true)
+![Products](https://github.com/OlgaTkachenkoWebdev/Jungle-rails/blob/master/docs/products.jpg?raw=true)
