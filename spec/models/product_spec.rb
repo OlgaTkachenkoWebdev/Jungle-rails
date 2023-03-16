@@ -15,22 +15,26 @@ RSpec.describe Product, type: :model do
 
     it "should return error message if name is not valid" do
       @product.name = nil
-      expect(@product.errors.full_messages).not_to be_equal([])
+      @product.save
+      expect(@product.errors.full_messages.first).to eq("Name can't be blank")
     end
 
     it "should return error message if price is not valid" do
       @product.price = nil
-      expect(@product.errors.full_messages).not_to be_equal([])
+      @product.save
+      expect(@product.errors.full_messages.first).to eq("Price must be greater than 0")
     end
 
     it "should return error message if quantity is not valid" do
       @product.quantity = nil
-      expect(@product.errors.full_messages).not_to be_equal([])
+      @product.save
+      expect(@product.errors.full_messages.first).to include("Quantity can't be blank")
     end
 
     it "should return error message if category is not valid" do
       @product.category = nil
-      expect(@product.errors.full_messages).not_to be_equal([])
+      @product.save
+      expect(@product.errors.full_messages.first).to eq("Category must exist")
     end
 
   end

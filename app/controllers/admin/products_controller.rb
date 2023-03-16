@@ -15,7 +15,7 @@ class Admin::ProductsController < ApplicationController
     if @product.save
       redirect_to [:admin, :products], notice: 'Product created!'
     else
-      render :new
+      render :new, flash: { error: @product.errors.full_messages.first }
     end
   end
 
